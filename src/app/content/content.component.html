@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-xl-4">
+           {{username}}
+           {{age}}
+           {{1+2}}
+           <h1>{{myfunction()}} </h1>
+        </div>
+
+        <div class="col-xl-4">  
+            <input type="text" value="{{username}}">
+            <button (click)="myfunction2()">Click</button>
+        </div>
+
+        <div class="col-xl-4">
+            <input type="text" value="{{username}}"/>
+            <button (click)=myfunction3()>Click Here</button>
+            <p style="border: 1px solid;" *ngIf = "parastatus">Test 1</p>
+            <p style="border: 1px solid;" [hidden] = "parastatus1">Test 2</p>
+            <h1>Users</h1>
+            <li *ngFor = "let ans of users">{{ans}}</li>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-xl-4" *ngFor = "let ans of products">
+           <h1>{{ans.name}}</h1>
+           <h2>{{ans.price}}</h2>
+        </div>
+    
+    </div>
+</div>
+
+<div class="container">
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <!-- <td colspan="{{colspan1{{">B</td> 
+            <td [colspan]="colspan1">B</td>  -->
+            <!-- <td [attr.colspan]="colspan1">B</td>  -->
+            <td [colSpan]="colspan1">B</td> 
+        </tr>
+    </table>
+</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <input type="text" value="" #x1/>
+        <input type="text" value="" #x2/>
+        <button (click)="newfun(x1,x2)">Reference Value</button>
+        <p [class.myClass]="applyClass">Testing</p>
+
+        <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+    
+    </div>
+</div>

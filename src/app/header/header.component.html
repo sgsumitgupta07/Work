@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/showdata">ShowData</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactpage">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/loginpage">Login</a> 
+          </li>
+          <li *ngIf="Link1" class="nav-item">
+            <a class="nav-link" routerLink="/registerpage">Register</a>
+          </li>
+          <li *ngIf="Link1" class="nav-item">
+            <a class="nav-link" routerLink="/loginformpage">UserLogin</a>
+          </li>
+          <li class="nav-item"  *ngIf="Link2">
+            <a class="nav-link" routerLink="/categorypage">Category</a>
+          </li>
+          <li class="nav-item"  *ngIf="Link2">
+            <a class="nav-link" routerLink="/listing-categorypage">Delete-Category</a>
+          </li>
+          <li class="nav-item"  *ngIf="Link2">
+            <a class="nav-link" routerLink="/listing-update-categorypage">Update-Category</a>
+          </li>
+          <li  *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/brandpage">Brand</a>
+          </li>
+          <li  *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/productpage">Product</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/cartspage">Carts {{header_cart_count}}</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/input-output">Input-Output</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/profile">Profile</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/logoutpage">Logout</a>
+          </li>
+          <li *ngIf="Link2" class="nav-item">
+            <a class="nav-link" routerLink="/pChange">CPassword</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dragdown">Drag-Down</a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </nav>

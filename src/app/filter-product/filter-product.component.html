@@ -1,0 +1,29 @@
+<div class="container">
+
+    <h4>Show Category URL Product</h4>
+
+    <hr><br>
+
+    <div class="row">
+
+        <div class="col-xl-4 text-center" *ngFor="let ans of result">
+        
+            <img src="assets\images/{{ans.productFile}}" class="img-fluid" alt=""  />
+
+            <h5>
+                {{ans.productName}}
+            </h5>
+            
+            <h6>
+                {{ans.productPrice}}
+            </h6>
+
+            <p>
+                <button (click)="add_to_cart(ans.id)" class="btn btn-warning">Add To Cart</button>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

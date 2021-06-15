@@ -1,0 +1,13 @@
+<div class="container">
+    <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" #username aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Age</label>
+          <input type="text" class="form-control" #age id="exampleInputPassword1">
+        </div>
+        <button type="button" (click)=submitData(username,age) class="btn btn-primary">Button</button>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+
+    <h4>Show Add TO Cart Products</h4>
+
+    <hr><br>
+
+    <div class="row">
+
+        <div class="col-xl-4 text-center" *ngFor="let ans of result">
+        
+            <img src="assets\images/{{ans.productFile}}" class="img-fluid" alt=""  />
+
+            <h5>
+                {{ans.productName}}
+            </h5>
+            
+            <h6>
+                {{ans.productPrice}}
+            </h6>
+
+            <button (click)="onClick(ans.id,$event)" class="btn btn-warning">Delete Cart</button>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <p>{{msg}}</p>
+        
+        <p class="text-center">
+            <button class="btn btn-warning">Buy Now</button>
+        </p>
+
+    </div>
+
+</div>

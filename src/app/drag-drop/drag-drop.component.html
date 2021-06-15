@@ -1,0 +1,59 @@
+<div class="container pt-4">
+
+  <div cdkDropListGroup>
+
+    <div class="row pt-4">
+    
+      <div class="col-xl-4">
+
+        <div class="example-container">
+          <h2>Cat</h2>
+      
+          <div
+            cdkDropList
+            [cdkDropListData]="showCatJSON"
+            class="example-list"
+            (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let item of showCatJSON" cdkDrag>{{item.name}}</div>
+          </div>
+        </div>
+      
+      </div>
+      
+      <div class="col-xl-4">
+
+        <div class="example-container">
+          <h2>Brand</h2>
+      
+          <div 
+            cdkDropList
+            [cdkDropListData]="showBrandJSON"
+            class="example-list"
+            (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let item of showBrandJSON" cdkDrag>{{item.name}}</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-xl-4">
+
+        <div class="example-container">
+          <h2>Users</h2>
+      
+          <div 
+            cdkDropList
+            [cdkDropListData]="showUsersJSON"
+            class="example-list"
+            (cdkDropListDropped)="drop($event)">
+            <div class="example-box" *ngFor="let item of showUsersJSON" cdkDrag>{{item.name}}</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

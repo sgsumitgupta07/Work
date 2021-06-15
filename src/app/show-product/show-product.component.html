@@ -1,0 +1,26 @@
+<h4>Show Product</h4>
+
+<hr><br>
+
+<div class="row">
+
+    <div class="col-xl-4 text-center" *ngFor="let ans of showProd">
+    
+        <img src="assets\images/{{ans.productFile}}" class="img-fluid" alt=""  />
+
+        <h5>
+            {{ans.productName}}
+        </h5>
+        
+        <h6>
+            {{ans.productPrice}}
+        </h6>
+
+        <p>
+            <button (click)="add_to_cart(ans.id)" class="btn btn-warning">Add To Cart</button>
+        </p>
+
+        <hr>
+        
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Add Brand Form</h1>
+
+    <hr>
+
+    <ul>
+        <h6>Enter Brand Name</h6>
+
+        <li>
+            <input type="text" #brandName />
+        </li>
+    
+    <br>
+
+        <li>
+            <button (click)="add_brand(brandName)">Add</button>
+        </li>
+        {{errMsg}}
+    </ul>
+</div>

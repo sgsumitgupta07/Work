@@ -1,0 +1,21 @@
+<div class="container">
+
+        <h4>Show Category</h4>
+
+    <hr>
+
+        <h6 *ngFor="let ans of showCat">
+            <a href="" (click)="sendCatData(ans.id, $event)">{{ans.name}}</a>
+        </h6>
+
+    <hr>
+
+        <h4>Category By URL</h4>
+
+    <hr>
+
+        <h6 *ngFor="let ans of showCat">
+            <a href="/filterProCatwise/{{ans.id}}" >{{ans.name}}</a>
+        </h6>
+
+</div>

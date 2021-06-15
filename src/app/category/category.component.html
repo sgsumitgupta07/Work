@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Add Category Form</h1>
+
+    <hr>
+
+    <ul>
+        <h6>Enter Category Name</h6>
+
+        <li>
+            <input type="text" #categoryName />
+        </li>
+    
+    <br>
+
+        <li>
+            <button (click)="add_category(categoryName)">Add</button>
+        </li>
+        {{errMsg}}
+    </ul>
+</div>
+
+
+<div class="container">
+
+    <H1>Listing Category Show</H1>
+
+    <hr>
+
+    <div class="row">
+
+        <ul>
+
+            <li *ngFor="let ans of showCat">
+                {{ans.name}}
+                <a href="/deleteCat/{{ans.id}}">Delete</a>
+            </li>
+            
+        </ul>
+
+    </div>
+
+</div>

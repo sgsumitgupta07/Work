@@ -1,0 +1,20 @@
+<div class="container">
+
+    <H1>Listing Category Update</H1>
+
+    <hr>
+
+    <div class="row">
+
+        <ul>
+
+            <li *ngFor="let ans of showCat">
+                {{ans.name}}
+                <a href="/updateCat/{{ans.id}}">Update</a>
+            </li>
+            
+        </ul>
+
+    </div>
+
+</div>

@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "ABC",
+      "age": "11"
+    },
+    {
+      "id": 2,
+      "name": "LMN",
+      "age": "22"
+    },
+    {
+      "id": 3,
+      "name": "SQR",
+      "age": "33"
+    }
+  ],
+  "category": [
+    {
+      "name": "Men-Wear",
+      "id": 1
+    },
+    {
+      "name": "Women-Wear",
+      "id": 2
+    },
+    {
+      "name": "Kid-Wear",
+      "id": 3
+    }
+  ],
+  "brand": [
+    {
+      "id": 1,
+      "name": "Nike"
+    },
+    {
+      "name": "Puma",
+      "id": 2
+    },
+    {
+      "name": "Fila",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "productName": "Product 1",
+      "productPrice": 1000,
+      "productCatID": 1,
+      "productBrandID": 1,
+      "productFile": "product1.jpg"
+    },
+    {
+      "productName": "Product 2",
+      "productPrice": "2000",
+      "productCatID": "2",
+      "productBrandID": "2",
+      "productFile": "product2.jpg",
+      "id": 2
+    },
+    {
+      "productName": "Product 3",
+      "productPrice": "3000",
+      "productCatID": "3",
+      "productBrandID": "3",
+      "productFile": "product3.jpg",
+      "id": 3
+    },
+    {
+      "productName": "Product 4",
+      "productPrice": "4000",
+      "productCatID": "1",
+      "productBrandID": "2",
+      "productFile": "product4.jpg",
+      "id": 4
+    },
+    {
+      "productName": "Product 5",
+      "productPrice": "5000",
+      "productCatID": "2",
+      "productBrandID": "3",
+      "productFile": "product5.jpg",
+      "id": 5
+    },
+    {
+      "productName": "Product 6",
+      "productPrice": "6000",
+      "productCatID": "3",
+      "productBrandID": "1",
+      "productFile": "product6.jpg",
+      "id": 6
+    }
+  ],
+  "userDetails": [
+    {
+      "userAge": 20,
+      "userEmail": "test@test.com",
+      "userMobileNo": 1234567890,
+      "userName": "test",
+      "userPassword": "1234",
+      "id": 1
+    },
+    {
+      "userName": "abc",
+      "userAge": "20",
+      "userMobileNo": "0123456789",
+      "userEmail": "abc@xyz.com",
+      "userPassword": "1234",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+
+<div class="container">
+
+        <h4>Show Brand</h4>
+
+    <hr>
+
+        <h6 *ngFor="let ans of showBrand">
+            <a href="" (click)="sendBrandData(ans.id, $event)">{{ans.name}}</a>
+        </h6>
+
+    <hr>
+
+        <h4>Brand By URL</h4>
+
+    <hr>
+
+        <h6 *ngFor="let ans of showBrand">
+            <a routerLink="/filterProBrandwise/{{ans.id}}" >{{ans.name}}</a>
+        </h6>
+
+</div>

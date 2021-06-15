@@ -1,0 +1,15 @@
+<div class="container">
+
+        <input type="text" #refValue >
+    
+        <button (click)="onClick(refValue)" type="button" class="btn btn-primary">Button</button>
+
+        <hr>
+
+        <app-input-output-dect-child [sendCHild]="sendDataChild" (sendOutput)="mydata=$event"></app-input-output-dect-child>
+
+        <hr>
+
+        <h1>{{mydata}}</h1>
+
+</div>

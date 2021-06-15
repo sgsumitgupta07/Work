@@ -1,0 +1,58 @@
+<div class="container">
+    <h1>Add Product Form</h1>
+    <hr>
+    <form [formGroup]="productForm" (ngSubmit)="productAction()">
+        
+        <ul>
+
+            <h6>Enter Product Name</h6>
+                <li>
+                    <input type="text" formControlName="productName" />
+                </li>
+            
+        <br>
+
+            <h6>Enter Product Price</h6>
+                <li>
+                    <input type="text" formControlName="productPrice" />
+                </li>
+
+        <br>
+
+            <h6>Select category</h6>
+                <li>
+                    <select formControlName="productCatID">
+                        <option value="{{ans.id}}" *ngFor="let ans of Catdata">
+                            {{ans.name}}
+                        </option>
+                    </select>
+                </li>
+
+        <br>
+
+            <h6>Select Brand</h6>
+                <li>
+                    <select formControlName="productBrandID">
+                        <option value="{{ans.id}}" *ngFor="let ans of Branddata">
+                            {{ans.name}}
+                        </option>
+                    </select>
+                </li>
+
+        <br>
+
+            <h6>Select File</h6>
+                <li>
+                    <input type="text" formControlName="productFile" />
+                </li>
+
+        <br>
+
+                <li>
+                    <button type="submit" [disabled]="!productForm.valid">Add Product</button>
+                </li>
+        </ul>
+ 
+    </form>
+
+</div>
